@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    height:100vh;
+    width:100%;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+nav img{
+    height:55px;
+}
+nav svg{
+    display: none;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:5px 20px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+nav ul{
+    display:flex;
+}
+nav ul li{
+    list-style-type:none;
+    padding:15px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 16px;
+}
+nav ul li::after{
+    content: "";
+    background-color: orangered;
+    width: 0;
+    height:2px;
+    display: block;
+    margin-top: 3px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width:100%;
+}
+.textsection{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+.textsection h1{
+    font-size: 5rem;
+}
+.textsection p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.textsection a{
+    margin-top:50px;
+    text-decoration: none;
+    color:white;
+    border: 1.7px solid orangered;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+.textsection a:hover{
+    background-color: orangered;
+}
+.course{
+    width:80%;
+    margin: 100px auto;
+    text-align: center;
+}
+.course h1{
+    font-size: 36px;
+}
+.course p{
+    font-size:0.9rem;
+    color:rgb(63, 63, 63);
+}
+.row{
+    display: flex;
+}
+.col{
+    margin:50px 30px;
+    background-color: rgba(250, 184, 204,0.5);
+    padding:30px;
+    border-radius: 3px;
+}
+.col h3{
+    margin-bottom:10px;
+}
+.col p{
+    color:black;
+    text-align: justify;
+    text-align-last: center;
+}
+.campus{
+    width:80%;
+    margin:20px auto;
+    text-align: center;
+}
+.campus p{
+    color:rgb(63,63,63);
+    font-size:0.9rem;
+    margin-bottom: 30px;
+}
+.campuscol{
+    position: relative;
+    flex-basis: 32%;
+    margin:10px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.campuscol img{
+    width:100%;
+}
+.layer{
+    background-color: transparent;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.7s;
+}
+.layer:hover{
+    background-color: rgb(240, 133, 133,0.8);;
+}
+.layer h1{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    color:white;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+.layer:hover h1{
+    position: absolute;
+    bottom: 49%;
+    opacity:1;
+}
+.facilities{
+    margin: 50px auto;
+    width:80%;
+    text-align: center;
+}
+.facilities h1{
+    font-size: 36px;
+}
+.facilities p{
+    font-size:0.9rem;
+    color:rgb(63, 63, 63);
+}
+.fac-col img{
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.fac-col{
+    margin:40px 10px;
+    padding:10px;
+    background-color: rgb(250, 216, 223);
+    border-radius: 8px;
+}
+.fac-col h4, .fac-col p{
+    padding:0 0px;
+    text-align: left;
+}
+.testimonials{
+    width:80%;
+    margin:50px auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

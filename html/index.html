@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/phone.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="../images/logo.png" alt="">
+            <div class="navlinks" id="navlinks">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16" onclick="hideMenu()">
+                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                  </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16" onclick="showMenu()">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </nav>
+        <div class="textsection">
+            <h1>World's Best University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 <br>Quidem nulla possimus ratione impedit excepturi? Voluptate?</p>
+            <a href="">Visit Us</a>   
+        </div>
+    </section>
+
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit <br>
+            dolorum quo quis itaque, error minima</p>
+        <div class="row">
+            <div class="col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem expedita possimus iure velit, tempora quasi quo, accusantium ratione earum unde quae accusamus odio deserunt molestias veritatis numquam dicta similique.</p>
+            </div>
+            <div class="col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem expedita possimus iure velit, tempora quasi quo, accusantium ratione earum unde quae accusamus odio deserunt molestias veritatis numquam dicta similique.</p>
+            </div>
+            <div class="col">
+                <h3>Post-Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem expedita possimus iure velit, tempora quasi quo, accusantium ratione earum unde quae accusamus odio deserunt molestias veritatis numquam dicta similique.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos ipsa quod
+             vel ad qui suscipit<br> dicta maxime, modi molestiae exercitationem iure iusto illum.
+        </p>
+        <div class="row">
+            <div class="campuscol">
+                <img src="../images/campus.jfif" alt="">
+                <div class="layer"><h1>LONDON</h1></div>
+            </div>
+            <div class="campuscol">
+                <img src="../images/campus.jfif" alt="">
+                <div class="layer"><h1>NEW YORK</h1></div>
+            </div>
+            <div class="campuscol">
+                <img src="../images/campus.jfif" alt="">
+                <div class="layer"><h1>WASHINGTON</h1></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate temporibus doloribus aut dolores <br>
+            aliquam assumenda, nemo repellendus odit accusamus suscipit, voluptas non reprehenderit laborum?</p>
+            <div class="row">
+                <div class="fac-col">
+                    <img src="../images/library.jfif" alt="">
+                    <h4>Huge Library</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, optio.</p>
+                </div>
+                <div class="fac-col">
+                    <img src="../images/library.jfif" alt="">
+                    <h4>Huge Library</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, optio.</p>
+                </div>
+                <div class="fac-col">
+                    <img src="../images/library.jfif" alt="">
+                    <h4>Huge Library</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, optio.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Students Have To Say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reiciendis officiis est debitis!</p>
+    </section>
+
+    <script>
+        var navlinks =document.getElementById("navlinks");
+        function hideMenu(){
+            navlinks.style.right="-200px"
+        }
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+    </script>
+</body>
+</html>
